@@ -1,10 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// Basic Enemy AI for a turn-based game.
-/// Currently moves randomly. Students must modify this
-/// script so the enemy moves toward the player.
-/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyAI : MonoBehaviour
 {
@@ -47,16 +42,4 @@ public class EnemyAI : MonoBehaviour
         Debug.Log("Enemy moved randomly.");
     }
 
-    // ---------------------------------------------------
-    // TODO: MODIFY THIS SCRIPT
-    // Replace random movement with the following logic:
-    // 1. Detect the player's position (use GameObject.FindWithTag("Player"))
-    // 2. Compare player and enemy positions
-    // 3. Move one tile horizontally OR vertically closer to the player
-    // 4. Enemy should not move diagonally or through walls
-    //
-    // Example:
-    // Vector2 playerPos = GameObject.FindWithTag("Player").transform.position;
-    // Decide whether to move horizontally or vertically toward player
-    // ---------------------------------------------------
-}
+
